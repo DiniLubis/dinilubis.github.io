@@ -9,7 +9,7 @@ var requestOptions = {
 
 hasil=""
 
-fetch("https://catfact.ninja/fact", requestOptions)
+fetch("https://api.coindesk.com/v1/bpi/currentprice.json", requestOptions)
   .then(response => response.text())
   .then(result => tampilkan(result))
   .catch(error => console.log('error', error));

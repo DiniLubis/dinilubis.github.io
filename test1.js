@@ -26,10 +26,10 @@ function PostSignUp(username, password) {
   function PushButton() {
     username = document.getElementById("username").value;
     password = document.getElementById("password").value;
-    PostSignUp(nama, email, password);
+    PostSignUp(username, password);
   
   }
   
   function GetResponse(result){
-    document.getElementById("formsignup").innerHTML = result;
+    document.getElementById("formlogin").innerHTML = result;
   }
